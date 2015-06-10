@@ -22,8 +22,6 @@ function streamTweets(tagName) {
 	    aTweet.username = tweet.user.name;
 	    aTweet.profile = tweet.user.profile_image_url;
 	    aTweet.time = new Date().getTime();
-	    console.log(aTweet);
-            console.log("\n");
 	    insertTweet(aTweet);
         });
 

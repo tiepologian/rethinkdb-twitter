@@ -3,7 +3,7 @@ $(document).ready(function() {
 
     function addTweet(tweet) {
 	var html = template(tweet).trim();
-	$("#twitter-feed").append(html);
+	$("#twitter-content").prepend(html);
     }
 
     var socket = io.connect();  
