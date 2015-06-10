@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.3/moment.min.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.runtime.min.js"></script>
+	<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+	<link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+	<div id="twitter-feed">
+	    <a href="https://twitter.com/" target="_blank"><img src="http://upload.wikimedia.org/wikipedia/it/0/09/Twitter_bird_logo.png" width="34" style="float:left;padding:3px 12px 0px 6px" alt="twitter bird" /></a>
+	    <h1>Javascript Tweets<span style="font-size:13px"></span></h1>
+	</div>
+
+        <script id="tweet-template" type="text/x-handlebars-template">
+            <div class="twitter-article">
+                <div class="twitter-pic"><img src="{{profile}}" width="42" height="42" alt="twitter icon" /></div>
+                <div class="twitter-text"><p><span class="tweetprofilelink"><strong>{{username}}</strong></span><br/>{{text}}</p>
+            </div>
+        </script>
+    </body>
+</html>
